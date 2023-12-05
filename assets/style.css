@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #0c0c0c;
+}
+[class*="container"] {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+html,
+body {
+  font-family: sans-serif;
+}
+.header {
+  height: 80px;
+}
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.nav_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+}
+.nav_item {
+  font-family: "Inter", sans-serif;
+}
+.nav_link {
+  position: relative;
+  transition: color 0.4s;
+}
+.nav_link::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  bottom: -3px;
+  background-color: #0c0c0c;
+  transition: 0.3s;
+}
+.nav_link:hover {
+  color: #828282;
+}
+.nav_link:hover::before {
+  width: 100%;
+}
+.header_logo--style {
+  color: rgb(0, 192, 255);
+}
