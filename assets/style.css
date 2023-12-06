@@ -63,3 +63,35 @@ body {
 .header_logo--style {
   color: rgb(0, 192, 255);
 }
+.carousel-container {
+  position: relative;
+  width: 300px;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: none;
+  width: 100%;
+  height: 200px;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 200px;
+  font-size: 24px;
+  position: absolute;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.carousel-btn:hover {
+  background-color: #2980b9;
+}
